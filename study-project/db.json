@@ -1,0 +1,176 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "ytgh",
+      "price": 500,
+      "time": 2,
+      "prefix": "днів"
+    },
+    {
+      "id": 2,
+      "title": "Дипломна робота",
+      "price": 2500,
+      "time": 7,
+      "prefix": "днів"
+    },
+    {
+      "id": 3,
+      "title": "Стаття",
+      "price": 300,
+      "time": 1,
+      "prefix": "дня"
+    },
+    {
+      "id": 4,
+      "title": "fdsfsfsfds",
+      "price": 250,
+      "time": 3,
+      "prefix": "годин"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Аліна Сторицька",
+      "text": "Все виконали професійно і у термін! Завдяки цій агенції я отримала високий бал з предмету, в якому не дуже розбиралася.",
+      "rate": 2,
+      "avatar": "",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "name": "Маркіян Куць",
+      "text": "Результат перевищив очікування! Дуже задоволений роботою, вона буквально спасла мене. Обов’язково звернуся ще раз!",
+      "rate": 2,
+      "avatar": "",
+      "postId": 1
+    },
+    {
+      "id": 3,
+      "name": "Міша Кислиця",
+      "text": "Замовляв роботу в останній момент, проте все виконали оперативно і якісно. Дуже вдячний і задоволений послугами!",
+      "rate": 2,
+      "avatar": "",
+      "postId": 1
+    },
+    {
+      "id": 4,
+      "name": "Анна Маляр",
+      "text": "Швидке виконання і високий рівень отриманої роботи просто змушує мене порекомендувати ці послуги своїм знайомим",
+      "rate": 2,
+      "avatar": "",
+      "postId": 1
+    }
+  ],
+  "test": [
+    {
+      "id": 1,
+      "text": "test1",
+      "rate": 1
+    },
+    {
+      "id": 2,
+      "text": "test2",
+      "rate": 2
+    },
+    {
+      "id": 3,
+      "text": "test3",
+      "rate": 3
+    },
+    {
+      "id": 4,
+      "text": "test4",
+      "rate": 4
+    },
+    {
+      "id": 5,
+      "text": "test5",
+      "rate": 5
+    }
+  ],
+  "profile": {
+    "user": ""
+  },
+  "orders": [
+    {
+      "id": 1,
+      "type": "",
+      "theme": "",
+      "item": "",
+      "deadline": "",
+      "user": "",
+      "author": "",
+      "rate": 5,
+      "completed": "",
+      "postId": 1,
+      "status": ""
+    },
+    {
+      "id": 1,
+      "type": "",
+      "theme": "",
+      "item": "",
+      "deadline": "",
+      "user": "",
+      "author": "",
+      "rate": 5,
+      "completed": "",
+      "postId": 1,
+      "status": ""
+    },
+    {
+      "id": 1,
+      "type": "",
+      "theme": "",
+      "item": "",
+      "deadline": "",
+      "user": "",
+      "author": "",
+      "rate": 5,
+      "completed": "",
+      "postId": 1,
+      "status": ""
+    },
+    {
+      "id": 1,
+      "type": "",
+      "theme": "",
+      "item": "",
+      "deadline": "",
+      "user": "",
+      "author": "",
+      "rate": 5,
+      "completed": "",
+      "postId": 1,
+      "status": ""
+    },
+    {
+      "id": 1,
+      "type": "",
+      "theme": "",
+      "item": "",
+      "deadline": "",
+      "user": "",
+      "author": "",
+      "rate": 5,
+      "completed": "",
+      "postId": 1,
+      "status": ""
+    },
+    {
+      "id": 1,
+      "type": "",
+      "theme": "",
+      "item": "",
+      "deadline": "",
+      "user": "",
+      "author": "",
+      "rate": 5,
+      "completed": "",
+      "postId": 1,
+      "status": ""
+    }
+  ]
+}
