@@ -1,4 +1,4 @@
-import {createAction, createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {createAction, createSlice} from "@reduxjs/toolkit";
 
 
 interface CounterState {
