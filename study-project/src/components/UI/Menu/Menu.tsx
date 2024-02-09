@@ -13,7 +13,7 @@ const Menu: React.FC<MenuProps> = ({}) => {
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/blog'>Blog</Link></li>
             <li><Link to='/orders'>Orders</Link></li>
-            <li><Link to='/rtk'>RTK</Link></li>
+            <li><Link to='/rhf'>RHF</Link></li>
             <li><Link to='/framer_motion'>Framer Motion</Link></li>
         </ul>
     );
