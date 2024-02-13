@@ -7,9 +7,10 @@ interface InputProps{
     label: string,
     id: string,
     inputProps: React.InputHTMLAttributes<any>,
+    type: React.HTMLInputTypeAttribute
 }
 
-const Input: FC<InputProps> = ({register, error, label, id, ...inputProps}) => {
+const UIinput: FC<InputProps> = ({register, error, label, id,type, ...inputProps}) => {
     return (
         <>
             <label htmlFor={id}>{label}</label>
@@ -17,6 +18,7 @@ const Input: FC<InputProps> = ({register, error, label, id, ...inputProps}) => {
                 {...register}
                 id={id}
                 {...inputProps}
+                type={type}
             />
             {error && <div>{error.message}</div>}
         </>
@@ -24,4 +26,4 @@ const Input: FC<InputProps> = ({register, error, label, id, ...inputProps}) => {
     );
 };
 
-export default Input;
+export default UIinput;

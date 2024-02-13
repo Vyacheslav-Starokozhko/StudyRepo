@@ -1,11 +1,16 @@
 import React from 'react';
 import {SubmitErrorHandler, SubmitHandler, useForm, Controller} from "react-hook-form";
-import Select from "react-select";
+import UIinput from "../../UI/Input/Input";
+import UIselect from "../../UI/Select/Select";
 
 interface Form {
-    name: string;
-    age: number;
-    country: string;
+    discipline: string;
+    type: string;
+    theme: string;
+    phone: string;
+    originality : number;
+    pages: number;
+    files: [];
 }
 
 const TestForm = () => {
@@ -30,26 +35,13 @@ const TestForm = () => {
     ]
     return (
         <form onSubmit={handleSubmit(submit, error)}>
-            <input type="text"
-                   {...register('name', {required: true})}
-                   aria-invalid={!!errors.name}
-            />
-            <input type="number" {...register('age')}/>
-            <Controller
-                name='country'
-                control={control}
-                render={({field: {onChange, value, ref}}) => (
-                    <div>
-                        <Select
-                            ref={ref}
-                            options={options}
-                            onChange={e => onChange(e.value)}
-                            value={options.find(c => c.value === value)}
-                        />
-                    </div>
-                )
-                }
-            />
+            <UIselect options={options} label='Discipline' error={errors.discipline} control={control} name='discipline' className="react-select-container" classNamePrefix="react-select"/>
+            <UIselect options={options} label='Type of work' error={errors.type} control={control} name='type' className="react-select-container" classNamePrefix="react-select"/>
+            <UIinput register={register('theme')} error={errors.theme} label='The theme of the work' id='size'/>
+            <UIinput register={register('phone')} error={errors.phone} label='Phone number' id='size'/>
+            <UIinput register={register('originality')} error={errors.originality} label='Originality of the work' id='size'/>
+            <UIinput register={register('pages')} error={errors.pages} label='Number of pages' id='size'/>
+            <UIinput register={register('files')} error={errors.files} label='Files' id='size'/>
             <button>Send</button>
         </form>
 
