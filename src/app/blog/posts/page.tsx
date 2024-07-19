@@ -32,7 +32,7 @@ export default function Posts() {
             {items.length > 0 && (
                 <ul>
                     {items.map((item:IPost) => (
-                        <PostItem key={item.id} title={item.title} views={item.views} />
+                        <PostItem key={item.id} post={item} />
                     ))}
                 </ul>
             )}

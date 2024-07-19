@@ -1,21 +1,20 @@
 
 import styles from './postitem.module.scss';
 import React from "react";
-// import { useRouter } from "next/router";
+import Link from "next/link";
 interface PostItemProps {
-    title:string,
-    views:number
+    post: IPost
 }
 
-const PostItem: React.FC<PostItemProps> = ({title,views}) => {
-
-    // const router = useRouter()
+const PostItem: React.FC<PostItemProps> = ({post}) => {
 
     return (
         <li>
-            <strong>{title}</strong>
-            <p>{views}</p>
-            {/*{router.query.slug && <p>Post: {router.query.slug}</p>}*/}
+            <strong>{post.title}</strong>
+            <p>{post.views}</p>
+            <p>
+                <Link href={`/blog/posts/${post.id}`}>Link</Link>
+            </p>
         </li>
 
     );
